@@ -1,9 +1,9 @@
-import { AntDesignTextbox } from "./controls";
+import { MaterialDesignTextbox as Control } from "./controls";
 
 function App() {
   return (
     <>
-      <AntDesignTextbox />
+      <Control />
     </>
   );
 }
