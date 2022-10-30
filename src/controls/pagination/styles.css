@@ -1,0 +1,31 @@
+.pagination {
+  display: flex;
+  gap: 4px;
+}
+
+.pagination > button {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 0;
+  border-radius: 3px;
+  background: #262528;
+  color: #f9f9f9;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.pagination > button.active {
+  background: #8f44fd;
+}
+
+.pagination > button:not(.material-symbols-outlined) {
+  font-family: "Euclid Circular A";
+  font-size: 14px;
+}
+
+.pagination > button:disabled {
+  opacity: 0.25;
+}
