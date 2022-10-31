@@ -1,4 +1,4 @@
-import { Pagination as Control } from "./controls";
+import { RippleButton as Control } from "./controls";
 
 function App() {
   return (

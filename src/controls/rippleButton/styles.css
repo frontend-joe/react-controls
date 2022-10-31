@@ -1,0 +1,59 @@
+@keyframes ripple {
+  0% {
+    opacity: 0;
+    scale: 0.5;
+  }
+  35% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    scale: 3.25;
+  }
+}
+
+.ripple-button {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 26px 20px 32px;
+  border: 0;
+  border-radius: 6px;
+  background: #f5307b;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ripple-button:focus {
+  box-shadow: 0 0 0 3px #ac2357;
+}
+
+.ripple-button-text {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f9f9f9;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Euclid Circular A";
+}
+
+.material-symbols-outlined {
+  font-size: 22px;
+}
+
+.ripple-shape {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  margin-top: -40px;
+  margin-left: -40px;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  background: #d42869;
+  animation: ripple 1s both;
+}
