@@ -1,4 +1,4 @@
-import { RippleButton as Control } from "./controls";
+import { RadioButtons as Control } from "./controls";
 
 function App() {
   return (
