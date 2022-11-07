@@ -1,0 +1,81 @@
+.dropdown-button-1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 56px;
+  padding: 0 16px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Euclid Circular A";
+  color: #f9f9f9;
+}
+
+.dropdown {
+  position: relative;
+  width: 200px;
+}
+
+.dropdown > button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  height: 60px;
+  width: 100%;
+  border-bottom: 2px solid #302c32;
+}
+
+.dropdown > button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #088775;
+  transform-origin: 0% 0%;
+  transform: scaleX(0);
+  transition: 0.5s;
+}
+
+.menu.open ~ button::after,
+.dropdown > button:hover::after {
+  transform: scale(1);
+}
+
+.menu {
+  position: absolute;
+  top: 56px;
+  overflow: hidden;
+  width: 100%;
+  background: #212025;
+  display: grid;
+  visibility: hidden;
+  opacity: 0;
+  translate: 0 20px;
+  transition: 0.3s;
+}
+
+.menu.open {
+  visibility: visible;
+  opacity: 1;
+  translate: 0 0;
+}
+
+.menu > button {
+  font-size: 15px;
+}
+
+.menu > button .material-symbols-outlined {
+  font-size: 20px;
+}
+
+.menu.open ~ button .material-symbols-outlined {
+  scale: 0.85;
+}
+
+.menu > button:hover {
+  background: #2c2b31;
+}

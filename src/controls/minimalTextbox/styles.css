@@ -1,0 +1,65 @@
+.wrapper {
+  position: relative;
+  font-family: "Euclid Circular A";
+  font-size: 18px;
+}
+
+@keyframes label-in {
+  0% {
+    left: 0;
+    right: auto;
+    opacity: 1;
+  }
+  50% {
+    left: 0;
+    right: auto;
+    opacity: 0;
+    scale: 1;
+  }
+  50.1% {
+    scale: 0.85;
+    left: auto;
+    right: 0;
+    opacity: 0;
+  }
+  100% {
+    color: #23c79a;
+    scale: 0.85;
+    left: auto;
+    right: 0;
+    opacity: 1;
+  }
+}
+
+label {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  translate: 0 -50%;
+  pointer-events: none;
+  color: #919191;
+  transform-origin: 100% 50%;
+}
+
+input {
+  width: 280px;
+  height: 56px;
+  font-family: inherit;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #919191;
+  outline: none;
+  padding: 0;
+  color: #f9f9f9;
+  font-size: 18px;
+}
+
+:is(input:focus, input.has-value) ~ label {
+  animation: label-in 0.5s both;
+}
+
+input:focus,
+input.has-value {
+  border-color: #23c79a;
+}

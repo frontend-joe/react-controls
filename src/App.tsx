@@ -1,4 +1,4 @@
-import { RadioButtons as Control } from "./controls";
+import { MinimalTextbox as Control } from "./controls/minimalTextbox/MinimalTextbox";
 
 function App() {
   return (
