@@ -1,4 +1,4 @@
-import { MinimalTextbox as Control } from "./controls/minimalTextbox/MinimalTextbox";
+import { AutoSuggest as Control } from "./controls/autoSuggest/AutoSuggest";
 
 function App() {
   return (
