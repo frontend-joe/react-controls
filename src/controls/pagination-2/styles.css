@@ -1,0 +1,30 @@
+body {
+  background: #000000;
+}
+
+.pager {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pager-button {
+  display: block;
+  height: 30px;
+  flex: 0 0 30px;
+  padding: 0;
+  border: 0;
+  border-radius: 15px;
+  background: #383142;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pager-button:hover {
+  background: #705794;
+}
+
+.pager-button.active {
+  background: #8f44fd;
+  flex: 0 0 60px;
+}

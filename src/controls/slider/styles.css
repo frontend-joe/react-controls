@@ -1,0 +1,58 @@
+body {
+  background: #eff2f2;
+  font-family: "Euclid Circular A", "Poppins";
+}
+
+:root {
+  --color-primary: #2ac5af;
+}
+
+.card {
+  display: grid;
+  gap: 14px;
+  padding: 20px 20px 24px;
+  width: 260px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.card h2 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(67 67 100 / 50%);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 38px;
+  font-weight: 500;
+  color: rgb(67 67 100 / 100%);
+}
+
+.card h3 abbr {
+  color: rgb(67 67 100 / 25%);
+  margin-right: 4px;
+}
+
+body .rc-slider-rail {
+  background: rgb(67 67 100 / 12%);
+}
+
+body .rc-slider-handle {
+  border-color: #ffffff;
+  background: var(--color-primary);
+  opacity: 1;
+  scale: 1.5;
+}
+
+body .rc-slider-handle:hover,
+body .rc-slider-handle-dragging {
+  box-shadow: none !important;
+  border-color: #ffffff !important;
+  cursor: pointer;
+}
+
+body .rc-slider-track {
+  background: var(--color-primary);
+}

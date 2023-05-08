@@ -1,4 +1,4 @@
-import { AutoSuggest as Control } from "./controls/autoSuggest/AutoSuggest";
+import { Signup as Control } from "./controls/passwordVisibility/Signup";
 
 function App() {
   return (
