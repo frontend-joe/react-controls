@@ -1,4 +1,4 @@
-import { Signup as Control } from "./controls/passwordVisibility/Signup";
+import { Pagination as Control } from "./controls/pacmanPagination/Pagination";
 
 function App() {
   return (
